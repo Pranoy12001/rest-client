@@ -1,15 +1,23 @@
 package com.rest.client.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Transaction {
+    @JsonProperty(required = true)
     private String requestId;
+    @JsonProperty(required = true)
     private String requester;
+    @JsonProperty(required = true)
     private String transactionType;
+    @JsonProperty(required = true)
     private String sourceAccountNumber;
+    @JsonProperty(required = true)
     private String amount;
+    @JsonProperty(required = true)
     private String destinationAccountNumber;
+    @JsonProperty(required = true)
     private String note;
 
     public String getRequestId() {

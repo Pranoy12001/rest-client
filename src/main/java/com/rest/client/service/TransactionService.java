@@ -6,5 +6,5 @@ import org.springframework.http.ResponseEntity;
 import java.util.Map;
 
 public interface TransactionService {
-    public ResponseEntity<Map> triggerTransaction(Map<String, String> response, Transaction transaction);
+    public ResponseEntity<Map> triggerTransaction(Transaction transaction, String body);
 }
